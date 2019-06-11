@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/myBooks/myBooks",
+    "pages/search/search",
+    "pages/userCenter/userCenter"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "green",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#EEEEEE",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "闲置小屋",
+        "iconPath": "images/TabbarHomeN.png",
+        "selectedIconPath": "images/TabbarHomeS.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "寻找小物",
+        "iconPath": "images/TabbarSearchN.png",
+        "selectedIconPath": "images/TabbarSearchS.png"
+      },
+      {
+        "pagePath": "pages/myBooks/myBooks",
+        "text": "我的收藏",
+        "iconPath": "images/TabbarCollectN.png",
+        "selectedIconPath": "images/TabbarCollectS.png"
+      },
+      {
+        "pagePath": "pages/userCenter/userCenter",
+        "text": "个人中心",
+        "iconPath": "images/TabbarpersonN.png",
+        "selectedIconPath": "images/TabbarpersonS.png"
+      }
+    ],
+    "borderStyle": "white",
+    "backgroundColor": "#f0f0f0",
+    "selectedColor": "#1aad16"
+  },
+  "sitemapLocation": "sitemap.json"
+}

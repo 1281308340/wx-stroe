@@ -1,0 +1,24 @@
+<!--pages/myBooks/myBooks.wxml-->
+<view class="mainViewClass">
+
+<!--//用户信息模块-->
+  <view class="userAvatar">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <view>
+      <text class="nickName">{{userInfo.nickName}}</text>
+      <text class="motto">遇见仿佛是一种神奇的安排，它是一切的开始。\n\n —— 董卿《朗读者》</text>
+    </view>
+  </view>
+
+  <!--收藏的书模块-->
+  <view class="booksList">
+    <view class="top-bar">
+      <image src="../../images/like.png"></image>
+      <text>我收藏的物品</text>
+    </view>
+    <view class="empty" wx:if="{{books.length == 0}}">
+      <image src="../../images/empty.png"></image>
+      <text>您还未收藏任何东西</text>
+    </view>
+  </view>
+</view>

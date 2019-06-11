@@ -1,0 +1,22 @@
+
+<!--pages/search/search.wxml-->
+<view class="mainViewClass">
+
+  <!--icon 图标-->
+  <image src="../../images/icon.png" class="banner"></image>
+
+  <!--表单-->
+  <form bindsubmit="formSubmit">
+    <input placeholder="请输入您需要的物品" name="input" />
+    <button type="primary" form-type="submit"> 搜 索 </button>
+  </form>
+  <!-- <view class="btn-area">
+    <button form-type="{{chooseImage}}">Submit</button>
+    <button form-type="reset">Reset</button>
+  </view> -->
+  <!--名人名言模块-->
+  <view class="index-motto">
+    <text class="motto">{{motto.content}} </text>
+    <text class="motto-author"> {{motto.author}}</text>
+  </view>
+</view>

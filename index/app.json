@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "民大小屋",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "闲置屋",
+    },{
+      "pagePath": "pages/index/index",
+      "text": "快递传送",
+    },{
+      "pagePath": "pages/index/index",
+      "text": "用户中心",
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+}

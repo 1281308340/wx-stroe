@@ -1,0 +1,68 @@
+<view class="container">
+ 
+  <view class="selection">
+    <swiper indicator-dots="true"
+      autoplay="true" interval="3000" duration="1000">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+
+  <view class="selection">
+      <view class="header">
+           <text>闲置物品</text>
+            <text class="text-all">全部闲置</text>
+      </view>
+
+
+      <view class="content">
+          <view class="content-item" wx:for="{{contentItems}}">
+             <image src="../../images/img1.png" />
+             <view class="content-item-text">
+              <text闲置书本出售</text>
+             </view>
+          </view>
+
+         
+
+      </view>
+
+  </view>
+
+
+
+  <view class="selection">
+      <view class="header">
+           <text>热门推荐</text>
+            <text class="text-all">全部物品</text>
+      </view>
+
+      <view class="list-item" wx:for="{{listItems}}">
+
+            <view class="list-item-images">
+                 <image src="../../images/img2.png" class="list-item-images-img" />
+                 <image src="../../images/avatar.png" class="avatar" />
+            </view>
+
+            <view class="list-item-text">
+                <view class="list-item-text-title">
+                  <text>物品出租</text>
+                </view>
+
+                <view class="list-item-text-content">
+                  <text>这里是内容,这里是内容,这里是内容,这里是内容,这里是内容,这里是内容,这里是内容,这里是内容,</text>
+                </view>
+
+            </view>
+
+      </view>
+
+
+  </view>
+
+
+</view>

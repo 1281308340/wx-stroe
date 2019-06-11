@@ -1,0 +1,54 @@
+<!--pages/home/home.wxml-->
+<view class="mainClass">
+
+<!--精彩推荐 栏目-->
+  <view class="topBarClass">
+    <text>   精品推荐</text>
+    <image src="../../images/mark.png" class="book-icon"></image>
+  </view>
+
+  <!--顶部滚动视图-->
+  <swiper indicator-dots="true" autoplay="true" interval="6000" duration="3000">
+    <block wx:for="{{recommendBooks}}">
+      <swiper-item>
+        <image src="{{item.image}}" class="slide-image" data-purchase="{{item.url}}" bindtap="bindToDetailTap"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+<!--热门 标题栏目-->
+  <view class="hot-books">
+    <view class="hb-bar">
+      <text>推荐书目</text>
+      <image src="../../images/mark.png" class="book-icon"></image>
+    </view>
+
+<!--热门 板块-->
+    <view class="hb-booklist">
+      <view class="hb-book" wx:for="{{hotBooks}}" bindtap="bindToDetailTap" data-purchase="{{item.url}}" data-id="{{item.id}}">
+        <image src="{{item.image}}"></image>
+        <text class="book-name">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!--精品 标题模块-->
+  <view class="boutique-books">
+    <view class="bb-bar">
+      <text> 精品在线</text>
+      <image src="../../images/mark.png" class="book-icon"></image>
+    </view>
+
+    <!--精品书籍列表-->
+    <view class="bb-booklist">
+      <view class="book" wx:for="{{boutiqueBooks}}" data-id="{{item.id}}" data-purchase="{{item.url}}" bindtap="bindToDetailTap">
+        <image src="{{item.images.title_img}}" class="title-img"></image>
+        <image src="{{item.images.author}}" class="author"></image>
+        <text class="book-name">{{item.name}}</text>
+        <text class="book-summary">{{item.miniSummary}}</text>
+      </view>
+    </view>
+  </view>
+
+  
+</view>
